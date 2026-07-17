@@ -9,7 +9,7 @@ services:
       - .env
 
   web:
-    build: ../api_yamdb
+    image: mcmorris77/yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
